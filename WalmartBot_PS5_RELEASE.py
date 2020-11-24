@@ -98,7 +98,7 @@ def PlayStationDigital(myFirstName, myLastName, myEmail, myAddress, myPhone, myC
                         'Bot has been turned on. Press "Okay" to continue and the Playstation bot will run. This '
                         'application may stop responding as it runs, but it will continue to run the scripts')
     if supplier == "Walmart":
-        driver = webdriver.Chrome("C:/Users/Alex/Downloads/chromedriver_win32/chromedriver.exe")
+        driver = webdriver.Chrome("chromedriver.exe")
         driver.get('https://www.walmart.com/ip/Sony-PlayStation-5-Digital-Edition/493824815')
         order(driver, myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum, myCreditExpireMonth,
               myCreditExpireYear, myCVV, myUsername, myPassword)
@@ -110,7 +110,7 @@ def PlayStationPhysical(myFirstName, myLastName, myEmail, myAddress, myPhone, my
                         'Bot has been turned on. Press "Okay" to continue and the Playstation bot will run. This '
                         'application may stop responding as it runs, but it will continue to run the scripts')
     if supplier == "Walmart":
-        driver = webdriver.Chrome("C:/Users/Alex/Downloads/chromedriver_win32/chromedriver.exe")
+        driver = webdriver.Chrome("chromedriver.exe")
         driver.get('https://www.walmart.com/ip/PlayStation-5-Console/363472942')
         order(driver, myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum, myCreditExpireMonth,
               myCreditExpireYear, myCVV, myUsername, myPassword)
@@ -120,9 +120,10 @@ def PlayStationPhysical(myFirstName, myLastName, myEmail, myAddress, myPhone, my
 def XboxX(myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum, myCreditExpireMonth,
           myCreditExpireYear, myCVV, supplier, myUsername, myPassword):
     messagebox.showinfo('Message',
-                        'Bot has been turned on. Press "Okay" to continue and the Xbox bot will run. This application may stop responding as it runs, but it will continue to run the scripts')
+                        'Bot has been turned on. Press "Okay" to continue and the Xbox bot will run. This application '
+                        'may stop responding as it runs, but it will continue to run the scripts')
     if supplier == "Walmart":
-        driver = webdriver.Chrome("C:/Users/Alex/Downloads/chromedriver_win32/chromedriver.exe")
+        driver = webdriver.Chrome("chromedriver.exe")
         driver.get('https://www.walmart.com/ip/XB1-Xbox-Series-X/443574645')
         order(driver, myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum, myCreditExpireMonth,
               myCreditExpireYear, myCVV, supplier, myUsername, myPassword)
@@ -132,9 +133,10 @@ def XboxX(myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum,
 def XboxS(myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum, myCreditExpireMonth,
           myCreditExpireYear, myCVV, supplier, myUsername, myPassword):
     messagebox.showinfo('Message',
-                        'Bot has been turned on. Press "Okay" to continue and the Xbox bot will run. This application may stop responding as it runs, but it will continue to run the scripts')
+                        'Bot has been turned on. Press "Okay" to continue and the Xbox bot will run. This application '
+                        'may stop responding as it runs, but it will continue to run the scripts')
     if supplier == "Walmart":
-        driver = webdriver.Chrome("C:/Users/Alex/Downloads/chromedriver_win32/chromedriver.exe")
+        driver = webdriver.Chrome("chromedriver.exe")
         driver.get('https://www.walmart.com/ip/XB1-Xbox-Series-S/606518560')
         order(driver, myFirstName, myLastName, myEmail, myAddress, myPhone, myCreditCardNum, myCreditExpireMonth,
               myCreditExpireYear, myCVV, myUsername, myPassword)
@@ -146,7 +148,9 @@ def form(console, supplier):
     root.title("Kocab's PlayStation Bot")
     root.geometry("1000x600")
     greeting = tkinter.Label(root,
-                             text="*This information isn't needed to run the code. Filling out this information will automate the whole purchase. Leave it blank and it will go to the end of the transcation where you can finish the rest manually*",
+                             text="*This information isn't needed to run the code. Filling out this information will "
+                                  "automate the whole purchase. Leave it blank and it will go to the end of the "
+                                  "transaction where you can finish the rest manually*",
                              wraplength=700)
     greeting.grid(column=0, row=0)
 
